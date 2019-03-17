@@ -27,11 +27,11 @@ interface SmsGatewayInterface
      * The abstract function to send sms using provided  SMS API
      *
      * @param String $message The sms message
-     * @param String $to      The recipient number
+     * @param String $smsTo      The recipient number
      *
      * @return mixed The response from API
      */
-    public function send($message, $to);
+    public function send($message, $smsTo);
 
     /**
      * The abstract function to get response from the API
