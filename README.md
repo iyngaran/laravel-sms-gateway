@@ -22,7 +22,6 @@ into your `config/` folder.
 
 Then add your `NEXMO_API_KEY,NEXMO_API_SECRET and NEXMO_SMS_FROM` Key. To get your API Key, [please visit](https://developer.nexmo.com/)
 
-
 ```php
 // config/sms_gateway.php
 
@@ -39,8 +38,6 @@ return [
     ],
 ];
 ```
-
-
 
 ## USAGE
 
