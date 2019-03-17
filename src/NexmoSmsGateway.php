@@ -3,6 +3,8 @@
  * The Sms Gateway to send SMS through various providers.
  * It supports multiple sms gateways, and easily extendable to support new gateways.
  *
+ * PHP version 7.1
+ *
  * @category PHP/Laravel
  * @package  Iyngaran_SmsGateway
  * @author   Iyathurai Iyngaran <dev@iyngaran.info>
@@ -12,14 +14,6 @@
 
 namespace Iyngaran\SmsGateway;
 
-/**
- * NexmoSmsGateway The class to send sms using Nexmo API
- *
- * @category NexmoSmsGateway
- * @package  Iyngaran_SmsGateway
- * @author   Iyathurai Iyngaran <dev@iyngaran.info>
- * @link     https://github.com/iyngaran/laravel-sms-gateway
- */
 class NexmoSmsGateway implements SmsGatewayInterface
 {
     protected $client;
