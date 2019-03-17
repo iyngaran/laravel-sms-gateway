@@ -14,6 +14,14 @@
 
 namespace Iyngaran\SmsGateway;
 
+/**
+ * NexmoSmsGateway The class to send sms using Nexmo API
+ *
+ * @category NexmoSmsGateway
+ * @package  Iyngaran_SmsGateway
+ * @author   Iyathurai Iyngaran <dev@iyngaran.info>
+ * @link     https://github.com/iyngaran/laravel-sms-gateway
+ */
 class NexmoSmsGateway implements SmsGatewayInterface
 {
     protected $client;
