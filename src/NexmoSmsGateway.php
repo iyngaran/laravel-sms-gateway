@@ -9,7 +9,9 @@
  * @package  Iyngaran_SmsGateway
  * @author   Iyathurai Iyngaran <dev@iyngaran.info>
  * @link     https://github.com/iyngaran/laravel-sms-gateway
+ * @license   https://github.com/iyngaran/laravel-sms-gateway/blob/master/LICENSE MIT Licence
  */
+
 namespace Iyngaran\SmsGateway;
 
 /**
