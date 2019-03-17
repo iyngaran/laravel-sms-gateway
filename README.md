@@ -49,7 +49,7 @@ return [
 ```php
     $objGateWay = new Iyngaran\SmsGateway\NexmoSmsGateway();
     $objSMS = new SmsGateway($objGateWay);
-    $response = $objSMS->sendSms('94711122288','Hello');
+    $response = $objSMS->sendSms('+12012926822','Hello');
 ```
 
 ### TwilioSmsGateway - Example in a controller
@@ -57,7 +57,7 @@ return [
 ```php
     $objTGateWay = new Iyngaran\SmsGateway\TwilioSmsGateway();
     $objSMST = new SmsGateway($objTGateWay);
-    $response = $objSMST->sendSms('+94711840760','Hello Twilio');
+    $response = $objSMST->sendSms('+12012926822','Hello Twilio');
 ```
 
 ## CONTRIBUTING
