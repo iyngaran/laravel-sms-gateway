@@ -1,0 +1,35 @@
+{
+    "name": "iyngaran/sms-gateway",
+    "description": "It is a Laravel package which will serve as gateway to send SMS through various providers. It supports multiple sms gateways, and easily extendable to support new gateways.",
+    "type": "library",
+    "require": {
+        "nexmo/client": "dev-master",
+        "twilio/sdk": "^5.29"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iyathurai Iyngaran",
+            "email": "dev@iyngaran.info"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Iyngaran\\SmsGateway\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iyngaran\\SmsGateway\\": "src/",
+            "Iyngaran\\SmsGatewayTest\\": "test/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iyngaran\\SmsGateway\\SmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
