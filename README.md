@@ -1,4 +1,4 @@
-# SendGrid Transport Module for Zend Framework
+# Laravel SMS gateway
 
 [![Latest Stable Version](https://poser.pugx.org/iyngaran/sms-gateway/v/stable)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![Total Downloads](https://poser.pugx.org/iyngaran/sms-gateway/downloads)](https://packagist.org/packages/iyngaran/sms-gateway)
