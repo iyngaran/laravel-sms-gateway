@@ -4,7 +4,6 @@
 [![Total Downloads](https://poser.pugx.org/iyngaran/sms-gateway/downloads)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![Latest Unstable Version](https://poser.pugx.org/iyngaran/sms-gateway/v/unstable)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![License](https://poser.pugx.org/iyngaran/sms-gateway/license)](https://packagist.org/packages/iyngaran/sms-gateway)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d8897c5f55de469484a6762d4283cc77)](https://www.codacy.com/app/iyngaran/SendGridTransport?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iyngaran/SendGridTransport&amp;utm_campaign=Badge_Grade)
 
 It is a Laravel package which will serve as gateway to send SMS through various providers. It supports multiple sms gateways, and easily extendable to support new gateways.
 
