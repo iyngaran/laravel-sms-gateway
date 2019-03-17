@@ -37,14 +37,14 @@ class SmsGateway
     /**
      * The function to send sms using provided  SMS API
      *
-     * @param String $to      The recipient number
+     * @param String $smsTo      The recipient number
      * @param String $message The sms message
      *
      * @return mixed The response from API
      */
-    public function sendSms($to,$message)
+    public function sendSms($smsTo,$message)
     {
-        return $this->smsGateway->send($to, $message);
+        return $this->smsGateway->send($smsTo, $message);
     }
 
     /**

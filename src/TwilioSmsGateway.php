@@ -43,15 +43,15 @@ class TwilioSmsGateway implements SmsGatewayInterface
     /**
      * The function to send sms using Twilio API
      *
-     * @param String $to      The recipient number
+     * @param String $smsTo      The recipient number
      * @param String $message The sms message
      *
      * @return mixed The response from API
      */
-    public function send($to,$message)
+    public function send($smsTo,$message)
     {
         $this->_response = $this->client->messages
-            ->create($to, // to
+            ->create($smsTo, // to
                 array("from" => $this->message_from, "body" => $message)
             );
 

@@ -44,16 +44,16 @@ class NexmoSmsGateway implements SmsGatewayInterface
     /**
      * The function to send sms using Nexmo API
      *
-     * @param String $to      The recipient number
+     * @param String $smsTo      The recipient number
      * @param String $message The sms message
      *
      * @return mixed The response from API
      */
-    public function send($to,$message)
+    public function send($smsTo,$message)
     {
         $this->_response = $this->client->message()->send(
             [
-            'to' => $to,
+            'to' => $smsTo,
             'from' => $this->message_from,
             'text' => $message
             ]
