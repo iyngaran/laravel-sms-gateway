@@ -67,9 +67,9 @@ class TwilioSmsGateway implements SmsGatewayInterface
     {
         $objResponseData = new ResponseData();
         if (isset($this->_response)) {
-            $objResponseData->setStatus($this->_response['status']);
-            $objResponseData->setMessagePrice($this->_response['price']);
-            $objResponseData->setMessageId($this->_response['sid']);
+            $objResponseData->setStatus($this->_response->status);
+            $objResponseData->setMessagePrice($this->_response->price);
+            $objResponseData->setMessageId($this->_response->sid);
         }
         return $objResponseData;
     }
