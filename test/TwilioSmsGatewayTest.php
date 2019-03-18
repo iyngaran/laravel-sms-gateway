@@ -1,4 +1,5 @@
 <?php
+
 namespace Iyngaran\SmsGateway\UnitTests;
 
 use Tests\TestCase;
@@ -11,11 +12,12 @@ class TwilioSmsGatewayTest extends TestCase
     /**
      * test the response data object
      */
-    public function testSendSmsResponse(){
+    public function testSendSmsResponse()
+    {
         $objTGateWay = new \Iyngaran\SmsGateway\TwilioSmsGateway();
         $objSMST = new \Iyngaran\SmsGateway\SmsGateway($objTGateWay);
-        $response = $objSMST->sendSms('+1711840760','Hello Twilio');
+        $response = $objSMST->sendSms('+1711840760', 'Hello Twilio');
         $responseDataObject = $objSMST->getResponseData();
-        $this->assertInstanceOf(\Iyngaran\SmsGateway\ResponseData::class,$responseDataObject);
+        $this->assertInstanceOf(\Iyngaran\SmsGateway\ResponseData::class, $responseDataObject);
     }
 }

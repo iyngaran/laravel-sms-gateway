@@ -1,4 +1,5 @@
 <?php
+
 namespace Iyngaran\SmsGateway\UnitTests;
 
 use Tests\TestCase;
@@ -18,9 +19,9 @@ class NexmoSmsGatewayTest extends TestCase
 
         $objGateWay = new \Iyngaran\SmsGateway\NexmoSmsGateway();
         $objSMS = new \Iyngaran\SmsGateway\SmsGateway($objGateWay);
-        $response = $objSMS->sendSms('+1711122288','Hello');
+        $response = $objSMS->sendSms('+1711122288', 'Hello');
         $responseStatus = $response['status'];
-        $this->assertEquals(0,$responseStatus);
+        $this->assertEquals(0, $responseStatus);
 
     }
 
@@ -32,20 +33,21 @@ class NexmoSmsGatewayTest extends TestCase
 
         $objGateWay = new \Iyngaran\SmsGateway\NexmoSmsGateway();
         $objSMS = new \Iyngaran\SmsGateway\SmsGateway($objGateWay);
-        $response = $objSMS->sendSms('+1711122288','Hello');
+        $response = $objSMS->sendSms('+1711122288', 'Hello');
         $messagePrice = $response['message-price'];
-        $this->assertEquals(0.05100000,$messagePrice);
+        $this->assertEquals(0.05100000, $messagePrice);
 
     }
 
     /**
      * test the response data object
      */
-    public function testSendSmsResponse(){
+    public function testSendSmsResponse()
+    {
         $objGateWay = new \Iyngaran\SmsGateway\NexmoSmsGateway();
         $objSMS = new \Iyngaran\SmsGateway\SmsGateway($objGateWay);
-        $response = $objSMS->sendSms('+1711122288','Hello');
+        $response = $objSMS->sendSms('+1711122288', 'Hello');
         $responseDataObject = $objSMS->getResponseData();
-        $this->assertInstanceOf(\Iyngaran\SmsGateway\ResponseData::class,$responseDataObject);
+        $this->assertInstanceOf(\Iyngaran\SmsGateway\ResponseData::class, $responseDataObject);
     }
 }
