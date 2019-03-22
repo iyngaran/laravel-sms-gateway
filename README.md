@@ -43,16 +43,14 @@ return [
 ### NexmoSmsGateway - Example in a controller
 
 ```php
-    $objGateWay = new Iyngaran\SmsGateway\NexmoSmsGateway();
-    $objSMS = new SmsGateway($objGateWay);
+    $objSMS = new SmsGateway(new NexmoSmsGateway());
     $response = $objSMS->sendSms('+12012926822','Hello');
 ```
 
 ### TwilioSmsGateway - Example in a controller
 
 ```php
-    $objTGateWay = new Iyngaran\SmsGateway\TwilioSmsGateway();
-    $objSMST = new SmsGateway($objTGateWay);
+    $objSMST = new SmsGateway(new TwilioSmsGateway());
     $response = $objSMST->sendSms('+12012926822','Hello Twilio');
 ```
 
