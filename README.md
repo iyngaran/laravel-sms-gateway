@@ -54,6 +54,12 @@ return [
     $response = $objSMST->sendSms('+12012926822','Hello Twilio');
 ```
 
+### MessageBirdSmsGateway - Example in a controller
+
+```php
+    $objSMST = new SmsGateway(new MessageBirdSmsGateway());
+    $response = $objSMST->sendSms('+12012926822','Hello MessageBird');
+```
 ## CONTRIBUTING
 
 You can contribute with this module suggesting improvements, making tests and reporting bugs. Use [issues](https://github.com/iyngaran/sms-gateway/issues) for that.
