@@ -21,4 +21,9 @@ return [
         'TOKEN' => env('TWILIO_TOKEN', ''),
         'SEND_SMS_FROM' => env('TWILIO_SMS_FROM', '+12012926824'),
     ],
+    'message_bird_sms_api_settings' => [
+        'API_KEY' => env('MESSAGE_BIRD_API_KEY', 'I3OtutoocC1J7mj5qTD5yIoan'),
+        'SEND_SMS_FROM' => env('MESSAGE_BIRD_SMS_FROM', '+94711122288'),
+    ],
+
 ];
