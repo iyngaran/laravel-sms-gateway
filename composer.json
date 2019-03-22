@@ -2,7 +2,7 @@
     "name": "iyngaran/sms-gateway",
     "description": "It is a Laravel package which will serve as gateway to send SMS through various providers. It supports multiple sms gateways, and easily extendable to support new gateways.",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "keywords": [
       "Laravel",
       "Laravel SMS gateway",
