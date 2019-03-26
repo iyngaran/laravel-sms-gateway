@@ -49,11 +49,11 @@ class MessageBirdSmsGateway implements SmsGatewayInterface
      *
      * @return mixed The response from API
      */
-    public function send($to,$message)
+    public function send($smsTo,$message)
     {
         $messageObj = new Message();
         $messageObj->originator = $this->message_from;
-        $messageObj->recipients = [$to];
+        $messageObj->recipients = [$smsTo];
         $messageObj->body = $message;
         $this->_response = $this->client->messages->create($messageObj);
         return $this->_response;
