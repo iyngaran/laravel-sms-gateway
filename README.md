@@ -73,7 +73,7 @@ Open the config file `config/sms_gateway.php` and add your `API KEY` and `API SE
 ],
 ```
 
-#### Sending SMS
+#### Sending SMS 
 
 Use the following code to send SMS.
 
