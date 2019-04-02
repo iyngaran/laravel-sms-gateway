@@ -147,12 +147,36 @@ Use the following code to send SMS.
     $response = $objSMST->sendSms('+12012926822','Hello MessageBird');
 ```
 
-### DialogSmsGateway - Example in a controller
+### Dialog (Sri Lanka)
+
+Dialog Axiata PLC has hence combined its innovativeness and technical superiority to bring out a solution that will enable you to tap into this opportunity by introducing Dialog Bulk SMS Solution which will enable you to communicate by SMS to a mass list of customers/staff through an easy to use web portal that can also be accessed from any location.
+
+Website : https://www.dialog.lk/
+
+To send sms using Dialog SMS API, you need to get the `API KEY` from Dialog.
+
+
+#### Configuration
+
+Open the config file `config/sms_gateway.php` and add your `API_KEY` to the following section of the configuration file.
+
+```php
+'dialog_sms_api_settings' => [
+        'API_KEY' => env('DIALOG_SMS_API_KEY', ''),
+        'ENDPOINT' => env('DIALOG_SMS_ENDPOINT', ''),
+        'SEND_SMS_FROM' => env('DIALOG_SMS_FROM', 'IYNGARAN'),
+    ]
+```
+
+#### Sending SMS
+
+Use the following code to send SMS.
 
 ```php
     $objSMS = new SmsGateway(new DialogSmsGateway());
     $response = $objSMS->sendSms('+12012926822','Hello, from Dialog SMS');
 ```
+
 ## CONTRIBUTING
 
 You can contribute with this module suggesting improvements, making tests and reporting bugs. Use [issues](https://github.com/iyngaran/sms-gateway/issues) for that.
