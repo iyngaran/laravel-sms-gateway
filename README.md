@@ -61,7 +61,7 @@ To send sms using Nexmo API, you need to get the API KEY and API SECRET from Nex
 
 When initially subscribing to Nexmo 2 EUR free test credit is granted for testing your application.
 
-####Configuration
+#### Configuration
 
 Open the config file `config/sms_gateway.php` and add your `API KEY` and `API SECRET` to the following section of the configuration file.
 
@@ -73,7 +73,7 @@ Open the config file `config/sms_gateway.php` and add your `API KEY` and `API SE
 ],
 ```
 
-####Sending SMS
+#### Sending SMS
 
 Use the following code to send SMS.
 
