@@ -82,7 +82,33 @@ Use the following code to send SMS.
     $response = $objSMS->sendSms('+12012926822','Hello Nexmo');
 ```
 
-### TwilioSmsGateway - Example in a controller
+### Twilio
+
+Twilio allows software developers to programmatically make and receive phone calls, send and receive text messages, and perform other communication functions using its web service APIs.
+
+Website : https://www.twilio.com/
+
+Developer Documentation: https://www.twilio.com/docs/api
+
+To send sms using Twilio API, you need to get the `SID` and `TOKEN` from Twilio.
+
+When initially subscribing to Twilio $15.50 free test credit is granted for testing your application.
+
+#### Configuration
+
+Open the config file `config/sms_gateway.php` and add your `SID` and `TOKEN` to the following section of the configuration file.
+
+```php
+twilio_sms_api_settings' => [
+        'SID' => env('TWILIO_SID', ''),
+        'TOKEN' => env('TWILIO_TOKEN', ''),
+        'SEND_SMS_FROM' => env('TWILIO_SMS_FROM', '+12012926824'),
+]
+```
+
+#### Sending SMS
+
+Use the following code to send SMS.
 
 ```php
     $objSMST = new SmsGateway(new TwilioSmsGateway());
