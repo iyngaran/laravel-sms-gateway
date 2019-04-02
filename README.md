@@ -172,7 +172,6 @@ Website : [dialog.lk](https://www.dialog.lk/)
 
 To send sms using Dialog SMS API, you need to get the `API KEY` from Dialog.
 
-
 #### Dialog Configuration
 
 Open the config file `config/sms_gateway.php` and add your `API_KEY` to the following section of the configuration file.
