@@ -66,7 +66,7 @@ To send sms using Nexmo API, you need to get the API KEY and API SECRET from Nex
 
 When initially subscribing to Nexmo 2 EUR free test credit is granted for testing your application.
 
-#### Configuration
+#### Nexmo Configuration
 
 Open the config file `config/sms_gateway.php` and add your `API KEY` and `API SECRET` to the following section of the configuration file.
 
@@ -78,7 +78,7 @@ Open the config file `config/sms_gateway.php` and add your `API KEY` and `API SE
 ],
 ```
 
-#### Sending SMS 
+#### Sending SMS - Nexmo 
 
 Use the following code to send SMS.
 
@@ -103,7 +103,7 @@ To send sms using Twilio API, you need to get the `SID` and `TOKEN` from Twilio.
 
 When initially subscribing to Twilio $15.50 free test credit is granted for testing your application.
 
-#### Configuration
+#### Twilio Configuration
 
 Open the config file `config/sms_gateway.php` and add your `SID` and `TOKEN` to the following section of the configuration file.
 
@@ -115,7 +115,7 @@ twilio_sms_api_settings' => [
 ]
 ```
 
-#### Sending SMS
+#### Sending SMS - Twilio
 
 Use the following code to send SMS.
 
@@ -140,7 +140,7 @@ To send sms using MessageBird API, you need to get the `API KEY` from MessageBir
 
 When initially subscribing to MessageBird 10 free SMS credit is granted for testing your application on live.
 
-#### Configuration
+#### MessageBird Configuration
 
 Open the config file `config/sms_gateway.php` and add your `API_KEY` to the following section of the configuration file.
 
@@ -151,7 +151,7 @@ Open the config file `config/sms_gateway.php` and add your `API_KEY` to the foll
  ]
 ```
 
-#### Sending SMS
+#### Sending SMS - MessageBird
 
 Use the following code to send SMS.
 
@@ -173,7 +173,7 @@ Website : [dialog.lk](https://www.dialog.lk/)
 To send sms using Dialog SMS API, you need to get the `API KEY` from Dialog.
 
 
-#### Configuration
+#### Dialog Configuration
 
 Open the config file `config/sms_gateway.php` and add your `API_KEY` to the following section of the configuration file.
 
@@ -185,7 +185,7 @@ Open the config file `config/sms_gateway.php` and add your `API_KEY` to the foll
     ]
 ```
 
-#### Sending SMS
+#### Sending SMS - Dialog
 
 Use the following code to send SMS.
 
