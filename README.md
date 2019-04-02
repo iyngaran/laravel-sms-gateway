@@ -1,9 +1,12 @@
 # Laravel SMS gateway
 
+
+
 [![Latest Stable Version](https://poser.pugx.org/iyngaran/sms-gateway/v/stable)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![Total Downloads](https://poser.pugx.org/iyngaran/sms-gateway/downloads)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![Latest Unstable Version](https://poser.pugx.org/iyngaran/sms-gateway/v/unstable)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![License](https://poser.pugx.org/iyngaran/sms-gateway/license)](https://packagist.org/packages/iyngaran/sms-gateway)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1e699a1026bc410ba8282674af990d53)](https://www.codacy.com/app/iyngaran/laravel-sms-gateway?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iyngaran/laravel-sms-gateway&amp;utm_campaign=Badge_Grade)
 
 It is a Laravel package which will serve as gateway to send SMS through various providers. It supports multiple sms gateways, and easily extendable to support new gateways.
 
@@ -49,6 +52,10 @@ return [
 
 ## USAGE
 
+<a href="https://www.nexmo.com/" target="_blank">
+<img src="https://www.nexmo.com/wp-content/uploads/2015/06/nexmo-logo-lg.jpg" height="70" title="Nexmo">
+</a>
+
 ### Nexmo
 
 Nexmo provides innovative communication SMS and Voice APIs that enable applications and enterprises to easily connect to their customers.
@@ -81,6 +88,10 @@ Use the following code to send SMS.
     $objSMS = new SmsGateway(new NexmoSmsGateway());
     $response = $objSMS->sendSms('+12012926822','Hello Nexmo');
 ```
+
+<a href="https://www.twilio.com/" target="_blank">
+<img src="https://www.twilio.com/marketing/bundles/company/img/logos/red/twilio-logo-red.svg" height="70" title="Twilio">
+</a>
 
 ### Twilio
 
@@ -115,6 +126,10 @@ Use the following code to send SMS.
     $response = $objSMST->sendSms('+12012926822','Hello Twilio');
 ```
 
+<a href="https://www.messagebird.com/en/" target="_blank">
+<img src="https://www.messagebird.com/img/logo.svg" height="70" title="Dialog (Sri Lanka)">
+</a>
+
 ### MessageBird
 
 MessageBird is a powerful communication APIs and technical resources to help you build your communication solution.
@@ -147,7 +162,12 @@ Use the following code to send SMS.
     $response = $objSMST->sendSms('+12012926822','Hello MessageBird');
 ```
 
+<a href="https://www.dialog.lk/" target="_blank">
+<img src="https://www.dialog.lk/dialogdocroot/content/images/dialog_logo@2x.png" height="70" title="Dialog (Sri Lanka)">
+</a>
+
 ### Dialog (Sri Lanka)
+
 
 Dialog Axiata PLC has hence combined its innovativeness and technical superiority to bring out a solution that will enable you to tap into this opportunity by introducing Dialog Bulk SMS Solution which will enable you to communicate by SMS to a mass list of customers/staff through an easy to use web portal that can also be accessed from any location.
 
