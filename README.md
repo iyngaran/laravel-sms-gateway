@@ -39,6 +39,11 @@ return [
         'API_KEY' => env('MESSAGE_BIRD_API_KEY', ''),
         'SEND_SMS_FROM' => env('MESSAGE_BIRD_SMS_FROM', '+12012926824'),
     ],
+    'dialog_sms_api_settings' => [
+         'API_KEY' => env('DIALOG_SMS_API_KEY', ''),
+         'ENDPOINT' => env('DIALOG_SMS_ENDPOINT', ''),
+         'SEND_SMS_FROM' => env('DIALOG_SMS_FROM', 'IYNGARAN'),
+    ],
 ];
 ```
 
