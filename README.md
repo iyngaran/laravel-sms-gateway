@@ -49,7 +49,33 @@ return [
 
 ## USAGE
 
-### NexmoSmsGateway - Example in a controller
+### Nexmo
+
+Nexmo provides innovative communication SMS and Voice APIs that enable applications and enterprises to easily connect to their customers.
+
+Website : https://www.nexmo.com/
+
+Developer Documentation: https://developer.nexmo.com/
+
+To send sms using Nexmo API, you need to get the API KEY and API SECRET from Nexmo.
+
+When initially subscribing to Nexmo 2 EUR free test credit is granted for testing your application.
+
+####Configuration
+
+Open the config file `config/sms_gateway.php` and add your `API KEY` and `API SECRET` to the following section of the configuration file.
+
+```php
+'nexmo_sms_api_settings' => [
+        'API_KEY' => env('NEXMO_API_KEY', ''),
+        'API_SECRET' => env('NEXMO_API_SECRET', ''),
+        'SEND_SMS_FROM' => env('NEXMO_SMS_FROM', 'IYNGARAN'),
+],
+```
+
+####Sending SMS
+
+Use the following code to send SMS.
 
 ```php
     $objSMS = new SmsGateway(new NexmoSmsGateway());
