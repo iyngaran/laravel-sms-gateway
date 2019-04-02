@@ -59,7 +59,7 @@ class TwilioSmsGateway implements SmsGatewayInterface
     }
 
     /**
-     * The function to get response from Nexmo API
+     * The function to get response from Twilio API
      *
      * @return ResponseData
      */
