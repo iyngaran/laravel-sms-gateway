@@ -115,7 +115,32 @@ Use the following code to send SMS.
     $response = $objSMST->sendSms('+12012926822','Hello Twilio');
 ```
 
-### MessageBirdSmsGateway - Example in a controller
+### MessageBird
+
+MessageBird is a powerful communication APIs and technical resources to help you build your communication solution.
+
+Website : https://www.messagebird.com/en/
+
+Developer Documentation: https://developers.messagebird.com/
+
+To send sms using MessageBird API, you need to get the `API KEY` from MessageBird.
+
+When initially subscribing to MessageBird 10 free SMS credit is granted for testing your application on live.
+
+#### Configuration
+
+Open the config file `config/sms_gateway.php` and add your `API_KEY` to the following section of the configuration file.
+
+```php
+'message_bird_sms_api_settings' => [
+        'API_KEY' => env('MESSAGE_BIRD_API_KEY', ''),
+        'SEND_SMS_FROM' => env('MESSAGE_BIRD_SMS_FROM', '+12012926824'),
+ ]
+```
+
+#### Sending SMS
+
+Use the following code to send SMS.
 
 ```php
     $objSMST = new SmsGateway(new MessageBirdSmsGateway());
