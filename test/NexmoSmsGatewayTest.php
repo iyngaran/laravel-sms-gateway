@@ -46,7 +46,7 @@ class NexmoSmsGatewayTest extends TestCase
     {
         $objGateWay = new \Iyngaran\SmsGateway\NexmoSmsGateway();
         $objSMS = new \Iyngaran\SmsGateway\SmsGateway($objGateWay);
-        $response = $objSMS->sendSms('+1711122288', 'Hello');
+        $objSMS->sendSms('+1711122288', 'Hello');
         $responseDataObject = $objSMS->getResponseData();
         $this->assertInstanceOf(\Iyngaran\SmsGateway\ResponseData::class, $responseDataObject);
     }
