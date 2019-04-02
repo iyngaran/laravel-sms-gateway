@@ -1,7 +1,5 @@
 # Laravel SMS gateway
 
-
-
 [![Latest Stable Version](https://poser.pugx.org/iyngaran/sms-gateway/v/stable)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![Total Downloads](https://poser.pugx.org/iyngaran/sms-gateway/downloads)](https://packagist.org/packages/iyngaran/sms-gateway)
 [![Latest Unstable Version](https://poser.pugx.org/iyngaran/sms-gateway/v/unstable)](https://packagist.org/packages/iyngaran/sms-gateway)
@@ -60,9 +58,9 @@ return [
 
 Nexmo provides innovative communication SMS and Voice APIs that enable applications and enterprises to easily connect to their customers.
 
-Website : https://www.nexmo.com/
+Website : [www.nexmo.com](https://www.nexmo.com/)
 
-Developer Documentation: https://developer.nexmo.com/
+Developer Documentation: [developer.nexmo.com](https://developer.nexmo.com/)
 
 To send sms using Nexmo API, you need to get the API KEY and API SECRET from Nexmo.
 
@@ -97,9 +95,9 @@ Use the following code to send SMS.
 
 Twilio allows software developers to programmatically make and receive phone calls, send and receive text messages, and perform other communication functions using its web service APIs.
 
-Website : https://www.twilio.com/
+Website : [twilio.com](https://www.twilio.com/)
 
-Developer Documentation: https://www.twilio.com/docs/api
+Developer Documentation: [Twilio API](https://www.twilio.com/docs/api)
 
 To send sms using Twilio API, you need to get the `SID` and `TOKEN` from Twilio.
 
@@ -134,9 +132,9 @@ Use the following code to send SMS.
 
 MessageBird is a powerful communication APIs and technical resources to help you build your communication solution.
 
-Website : https://www.messagebird.com/en/
+Website : [messagebird.com](https://www.messagebird.com/en/)
 
-Developer Documentation: https://developers.messagebird.com/
+Developer Documentation: [developers.messagebird.com](https://developers.messagebird.com/)
 
 To send sms using MessageBird API, you need to get the `API KEY` from MessageBird.
 
@@ -168,10 +166,9 @@ Use the following code to send SMS.
 
 ### Dialog (Sri Lanka)
 
-
 Dialog Axiata PLC has hence combined its innovativeness and technical superiority to bring out a solution that will enable you to tap into this opportunity by introducing Dialog Bulk SMS Solution which will enable you to communicate by SMS to a mass list of customers/staff through an easy to use web portal that can also be accessed from any location.
 
-Website : https://www.dialog.lk/
+Website : [dialog.lk](https://www.dialog.lk/)
 
 To send sms using Dialog SMS API, you need to get the `API KEY` from Dialog.
 
