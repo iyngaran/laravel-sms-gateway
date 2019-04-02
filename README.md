@@ -64,6 +64,13 @@ return [
     $objSMST = new SmsGateway(new MessageBirdSmsGateway());
     $response = $objSMST->sendSms('+12012926822','Hello MessageBird');
 ```
+
+### DialogSmsGateway - Example in a controller
+
+```php
+    $objSMS = new SmsGateway(new DialogSmsGateway());
+    $response = $objSMS->sendSms('+12012926822','Hello, from Dialog SMS');
+```
 ## CONTRIBUTING
 
 You can contribute with this module suggesting improvements, making tests and reporting bugs. Use [issues](https://github.com/iyngaran/sms-gateway/issues) for that.
